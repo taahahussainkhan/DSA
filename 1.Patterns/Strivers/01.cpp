@@ -118,7 +118,7 @@ void pattern9(int n)
         }
         //Star
         // n = 5
-        for (int k = n+(n-1); k >= i  ; k--)
+        for (int k = n+(n-i); k >= i  ; k--)
         {
             cout<< " *";
         }
@@ -126,12 +126,55 @@ void pattern9(int n)
         for (int l = 1; l <= i; l++)
         {
             cout<< " ";
+
         }        
         cout << endl;
     }
     cout << endl;
 }
+void pattern10(int n){
+    for(int i = 0 ; i < n ; i++)
+    {
+        //Space
+        for (int j = 0; j < n-i-1; j++)
+        {
+            cout<< "  ";
+        }
+        //Star
+        for (int k = 0; k < (2*i+1); k++)
+        {
+            cout<< " *";
+        }
+        //Space
+        for (int l = 0; l <= n-i-1; l++)
+        {
+            cout<< "  ";
+        }        
+        cout << endl;
+    }
+    for(int i = 1 ; i <= n ; i++)
+    {
+        //Space
+        for (int j = 1; j <= i; j++)
+        {
+            cout<<"  ";
+        }
+        //Star
+        // n = 5
+        for (int k = n+(n-i); k >= i  ; k--)
+        {
+            cout<< " *";
+        }
+        //Space
+        for (int l = 1; l <= i; l++)
+        {
+            cout<< "  ";
 
+        }        
+        cout << endl;
+    }
+    cout << endl;
+}
 int main()
 {
     int n = 5;
@@ -145,5 +188,6 @@ int main()
     pattern7(n);
     pattern8(n);
     pattern9(n);
+    pattern10(n);
 
 }
