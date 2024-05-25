@@ -175,19 +175,36 @@ void pattern10(int n){
     }
     cout << endl;
 }
+void pattern11(int n){
+    for (int i = 1; i <= 2*n-1; i++)
+    {
+        int stars = i;
+        if(i > n) stars = 2*n-i; 
+        
+            for (int k = 1; k <= stars; k++)
+            {
+                cout<< " *";
+            }
+            cout << endl;
+       
+    }
+    
+}
+
 int main()
 {
     int n = 5;
   
-    pattern1(n);
-    pattern2(n);
-    pattern3(n);
-    pattern4(n);
-    pattern5(n);
-    pattern6(n);
-    pattern7(n);
-    pattern8(n);
-    pattern9(n);
-    pattern10(n);
+    // pattern1(n);
+    // pattern2(n);
+    // pattern3(n);
+    // pattern4(n);
+    // pattern5(n);
+    // pattern6(n);
+    // pattern7(n);
+    // pattern8(n);
+    // pattern9(n);
+    // pattern10(n);
+    pattern11(n);
 
 }
